@@ -3,18 +3,18 @@ namespace ConsoleApp5
 {
     class Program
     {
-        static void UC2(int a, int b)
+        static void UC3(int a, int b)
         {
             int Wage_per_hour = a;
-            int Full_day_hour = b;
-            Console.WriteLine($"Daily Employee Wage {Wage_per_hour * Full_day_hour}");
+            int Part_Time_hour = b;
+            Console.WriteLine($"Part time Employee Wage {Wage_per_hour * Part_Time_hour}");
 
         }
 
+
         static void Main(string[] args)
         {
-            UC2(20, 8);
-
+            UC3(20, 4);
             Console.ReadLine();
         }
     }
