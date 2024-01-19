@@ -8,14 +8,15 @@ namespace ConsoleApp6
 {
     internal class Program
     {
-        static int UC1()
+        static int UC2()
         {
-            int position = 0;
-            return position;
+            Random rand = new Random();
+            int number = rand.Next(1, 7);
+            return number;
         }
         static void Main(string[] args)
         {
-            Console.WriteLine($"Player 1 position at start = {UC1()}");
+            Console.WriteLine($"Player got number = {UC2()}");
             Console.ReadLine();
         }
     }
