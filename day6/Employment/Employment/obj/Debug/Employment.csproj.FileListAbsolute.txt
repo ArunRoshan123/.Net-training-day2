@@ -1,0 +1,14 @@
+C:\Users\srira\source\repos\Employment\Employment\bin\Debug\Employment.exe.config
+C:\Users\srira\source\repos\Employment\Employment\bin\Debug\Employment.exe
+C:\Users\srira\source\repos\Employment\Employment\bin\Debug\Employment.pdb
+C:\Users\srira\source\repos\Employment\Employment\obj\Debug\Employment.csproj.AssemblyReference.cache
+C:\Users\srira\source\repos\Employment\Employment\obj\Debug\Employment.csproj.CoreCompileInputs.cache
+C:\Users\srira\source\repos\Employment\Employment\obj\Debug\Employment.exe
+C:\Users\srira\source\repos\Employment\Employment\obj\Debug\Employment.pdb
+C:\Users\srira\OneDrive\Desktop\Locobuzz_Training\day6\Employment\Employment\bin\Debug\Employment.exe.config
+C:\Users\srira\OneDrive\Desktop\Locobuzz_Training\day6\Employment\Employment\bin\Debug\Employment.exe
+C:\Users\srira\OneDrive\Desktop\Locobuzz_Training\day6\Employment\Employment\bin\Debug\Employment.pdb
+C:\Users\srira\OneDrive\Desktop\Locobuzz_Training\day6\Employment\Employment\obj\Debug\Employment.csproj.AssemblyReference.cache
+C:\Users\srira\OneDrive\Desktop\Locobuzz_Training\day6\Employment\Employment\obj\Debug\Employment.csproj.CoreCompileInputs.cache
+C:\Users\srira\OneDrive\Desktop\Locobuzz_Training\day6\Employment\Employment\obj\Debug\Employment.exe
+C:\Users\srira\OneDrive\Desktop\Locobuzz_Training\day6\Employment\Employment\obj\Debug\Employment.pdb
