@@ -8,9 +8,15 @@ namespace ConsoleApp6
 {
     internal class Program
     {
+        static int UC1()
+        {
+            int position = 0;
+            return position;
+        }
         static void Main(string[] args)
         {
-
+            Console.WriteLine($"Player 1 position at start = {UC1()}");
+            Console.ReadLine();
         }
     }
 }
