@@ -3,41 +3,34 @@ namespace ConsoleApp5
 {
     class Program
     {
-        static void UC2(int a, int b)
+        static void UC5(string a)
         {
-            int Wage_per_hour = a;
-            int Full_day_hour = b;
-            Console.WriteLine($"Daily Employee Wage {Wage_per_hour * Full_day_hour}");
+            int part_time_day = 20 * 4;
+            int full_time_day = 20 * 8;
+            int part_time_per_month = part_time_day * 20;
+            int full_time_per_month = full_time_day * 20;
 
-        }
-        static void UC3(int a, int b)
-        {
-            int Wage_per_hour = a;
-            int Part_Time_hour = b;
-            Console.WriteLine($"Part time Employee Wage {Wage_per_hour * Part_Time_hour}");
-
-        }
-
-        static void UC4(string a)
-        {
-            switch (a)
+            if (a == "part time")
             {
-                case "full time":
-                    UC2(20, 8);
-                    break;
-                case "part time":
-                    UC3(20, 4);
-                    break;
+                Console.WriteLine($"Wage per month for part time = {part_time_per_month}");
+
+                //UC6
+                Console.WriteLine($"Wage per year for part time = {part_time_per_month * 12}");
+            }
+            else if(a == "full time")
+            {
+                Console.WriteLine($"Wage per month for full time = {full_time_per_month}");
+
+                //UC6
+                Console.WriteLine($"Wage per year for full time = {full_time_per_month * 12}");
             }
         }
 
         static void Main(string[] args)
         {
-            UC2(20, 8);
-            UC3(20, 4);
-
+            
             string a = Console.ReadLine();
-            UC4(a);
+            UC5(a);
             Console.ReadLine();
         }
     }
