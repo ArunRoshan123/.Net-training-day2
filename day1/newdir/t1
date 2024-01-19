@@ -1,0 +1,52 @@
+    6  ls
+    9  ls
+   10  ls -a
+   11  ls --help
+   12  ls -A
+   13  ls -b
+   14  ls -B
+   15  ls -c
+   16  ls -C
+   17  ls -d
+   18  ls -d
+   20  ls -D
+   21  ls -f
+   22  ls -F
+   23  ls -g
+   24  ls -G
+   25  ls -l
+   26  ls -t
+   27  ls -r
+   28  ls -R
+   33  ls -R
+   34  ls -r
+   43  ls
+   44  ls -a
+   47  ls
+   50  ls
+   54  ls -a
+   55  ls -l
+   56  ls -t 
+   59  ls -r
+   60  ls -R
+   61  ls -S
+   64  ls -R
+   67  ls -i
+   68  ls -g
+   69  ls -h
+   71  ls -h
+   73  ls -h
+   74  ls -d 
+   76  ls -d
+   78  ls -d
+   80  ls
+   81  ls -h 
+   82  ls -l
+   86  ls
+   94  ls
+   95  ls | grep.txt
+   96  ls | grep .txt
+   97  ls | grep .pdf
+   98  ls | a .txt
+  102  ls
+  104  history | grep .ls > t1

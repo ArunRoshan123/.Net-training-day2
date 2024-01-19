@@ -1,0 +1,92 @@
+    1  wage_per_hr=20
+    2  hr=8
+    3  n=$((wage_per_hr * hr))
+    4  echo $n
+    5  pwd
+    6  cd day2_training/
+    7  nano uc2.sh
+    8  nano uc3.sh
+    9  nano uc2.sh
+   10  nano uc1.sh
+   11  nano uc3.sh
+   12  nano uc2.sh
+   13  nano uc1.sh
+   14  nano uc3.sh
+   15  ./uc3.sh
+   16  ./uc2.sh
+   17  ./uc3.sh
+   18  nano uc2.sh
+   19  nano uc3.sh
+   20  ./uc3.sh
+   21  clear
+   22  cd ..
+   23  owd
+   24  pwd
+   25  cd onedrive
+   26  cd desktop
+   27  cd newdir
+   28  cd ..
+   29  mkdir day1
+   30  mv newdir day1
+   31  cd day1
+   32  git init
+   33  git status
+   34  gitadd .
+   35  git add .
+   36  git status
+   37  git commit -n "[Arun] Add: Adding day1 training"
+   38  git commit -m "[Arun] Add: Adding day1 training"
+   39  git log-- oneline
+   40  git log -- oneline
+   41  git log --oneline
+   42  git log
+   43  git branch -m main
+   44  git remote add origin https://github.com/ArunRoshan123/Locobuzz-Day3.git
+   45  git push
+   46  git push --all
+   47  mkdir a1.sh
+   48  pwd
+   49  ls
+   50  touch a2.txt
+   51  get checkout -b a2.txt 
+   52* git checkout a2.txt 
+   53  get checkout -b a3.txt 
+   54  gitt checkout -b a3.txt 
+   55  git checkout -b a3.txt 
+   56  git branch a4
+   57  git branch 
+   58  git checkout -b a4.txt 
+   59  git branch 
+   60  git status
+   61  git checkout main 
+   62  git status
+   63  git checkout a4 
+   64  git checkout a3.txt 
+   65  git checkout -b abc
+   66  nano abc
+   67  git status
+   68  git add abc
+   69  git commit -m "[Arun] Add: added files"
+   70  git checkout main
+   71  git pull 
+   72  git marge abc
+   73  git merge abc
+   74  git pull origin main
+   75  git push --all
+   76  touch a1.sh
+   77  nano a1.sh 
+   78  git status
+   79  git add a1.sh
+   80  git log
+   81  git commit 
+   82  git commit -m "[arun] hi"
+   83  git commit -m "[arun] Add: hi"
+   84  git log
+   85  git log --oneline
+   86  nano a1.sh 
+   87  cat
+   88  cat a1.sh 
+   89  git checkout abc 
+   90  history >saveday3.txt
+   91  pwd
+   92  history > saveday3.txt

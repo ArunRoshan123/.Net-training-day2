@@ -1,0 +1,16 @@
+    4  cd outer
+    7  cd ..
+   31  cd outer
+   36  cd arun_hautiya 
+   62  cd ..
+   65  cd outer 
+   70  cd ..
+   72  cd outer
+   75  cd ..
+   79  cd outer 
+   83  cd --
+   87  cd desktop
+   88  cd onedrive 
+   89  cd desktop 
+   91  cd newdir/
+  101  history | grep .cd > Training_day_1
