@@ -3,18 +3,17 @@ namespace ConsoleApp5
 {
     class Program
     {
+        static void UC2(int a, int b)
+        {
+            int Wage_per_hour = a;
+            int Full_day_hour = b;
+            Console.WriteLine($"Daily Employee Wage {Wage_per_hour * Full_day_hour}");
+
+        }
+
         static void Main(string[] args)
         {
-            Random o1 = new Random();
-            int attendance = o1.Next(0, 2);
-            if (attendance == 0)
-            {
-                Console.WriteLine("Absent");
-            }
-            else if (attendance == 1)
-            {
-                Console.WriteLine("Present");
-            }
+            UC2(20, 8);
 
             Console.ReadLine();
         }
