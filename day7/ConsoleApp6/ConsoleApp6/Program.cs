@@ -27,8 +27,11 @@ namespace ConsoleApp6
                         Console.WriteLine($"No Play. Player stays at position {position}");
                         break;
                     case 1:
+                        if(position + number <= winningposition)
+                        {
                         position += number;
                         Console.WriteLine($"Ladder! Player moves ahead to {position}");
+                        }
                         break;
                     case 2:
                         position -= number;
