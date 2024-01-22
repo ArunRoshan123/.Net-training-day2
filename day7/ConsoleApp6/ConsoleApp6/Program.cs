@@ -8,8 +8,15 @@ namespace snake_ladder
 {
     internal class Program
     {
+        static int UC2()
+        {
+            Random rand = new Random();
+            int number = rand.Next(1, 7);
+            return number;
+        }
         static void Main(string[] args)
         {
+
             int player_pos = 0;
             int count = 0;
             Random rand = new Random();
@@ -52,6 +59,7 @@ namespace snake_ladder
             }
             Console.WriteLine("Dice was rolled " + count + " times");
             Console.WriteLine("Player Position : " + player_pos);
+            Console.WriteLine($"Player got number = {UC2()}");
             Console.ReadLine();
         }
     }
