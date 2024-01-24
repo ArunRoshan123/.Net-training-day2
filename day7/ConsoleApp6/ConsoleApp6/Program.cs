@@ -10,49 +10,85 @@ namespace ConsoleApp6
     {
         static void Main(string[] args)
         {
-            int player_pos = 0;
+            int play1position = 0;
+            int play2position = 0;
             int count = 0;
-            Random rand = new Random();
-            while (player_pos < 100)
+            while (play1position < 100 && play2position < 100)
             {
-
-                int dice_num = rand.Next(1, 6);
-                count++;
-                int option = rand.Next(1, 3);
-                switch (option)
+                Console.WriteLine($"Dice count: {count++}");
+                Console.WriteLine($"Player 1 is currently at position {play1position}. Press Enter to simulate a player's turn.");
+                int x1 = Diceroll();
+                Console.WriteLine($"Dice gave: {x1}");
+                Console.ReadLine();
+                Playerposition(ref play1position, x1, count);
+                if (play1position == 100)
                 {
-                    case 1: //no play
-                        Console.WriteLine("Position is " + player_pos);
-                        break;
-
-                    case 2:
-
-                        int newPos = player_pos + dice_num;
-                        Console.WriteLine("Position is " + player_pos);
-                        if (newPos > 100)
-                        {
-                            continue;
-                        }
-                        else
-                        {
-                            player_pos = newPos;
-                        }
-                        break;
-                    case 3:
-                        Console.WriteLine("Position is " + player_pos);
-                        if (player_pos < 0)
-                        {
-                            player_pos = 0;
-                            break;
-                        }
-                        player_pos -= dice_num;
-                        break;
+                    Console.WriteLine("Player 1 reached the winning position (100)!");
+                    break;
                 }
+                Console.WriteLine($"Player 2 is currently at position {play2position}. Press Enter to simulate a player's turn.");
+                Console.ReadLine();
+                int x2 = Diceroll();
+                Console.WriteLine($"Dice gave: {x2}");
 
+                Playerposition(ref play2position, x2, count);
+
+                if (play2position == 100)
+                {
+                    Console.WriteLine("Player 2 reached the winning position (100)!");
+                    break; // Player 2 won, exit the loop
+                }
             }
-            Console.WriteLine("Dice was rolled " + count + " times");
-            Console.WriteLine("Player Position : " + player_pos);
+            Console.WriteLine("Game Over!");
             Console.ReadLine();
         }
+        static void Playerposition(ref int playposition, int x, int c)
+        {
+            Random rand = new Random();
+            int options = rand.Next(0, 3);
+            switch (options)
+            {
+                case 0:
+                    Console.WriteLine("Player found a ladder! Move forward.");
+                    playposition += x;
+                    int a = rand.Next(playposition, 101);
+                    Console.WriteLine($"Player moved from {playposition} to {a}");
+                    playposition = a;
+                    break;
+                case 1:
+                    Console.WriteLine("Its a Snake, Move backward");
+                    playposition += x;
+                    int b = rand.Next(2, playposition);
+                    Console.WriteLine($"Player moved from {playposition} to {b}.");
+                    playposition = b;
+                    break;
+                case 2:
+                    int previous = playposition;
+                    playposition += x;
+                    Console.WriteLine($"Player moved from {previous} to {playposition}.");
+                    break;
+            }
+
+
+            if (playposition < 0)
+            {
+                playposition = 0;
+            }
+            else if (playposition == 100)
+            {
+                Console.WriteLine("Total die count " + c);
+                Console.WriteLine("Player reached the winning position (100)!");
+            }
+            else if (playposition > 100)
+            {
+                Console.WriteLine($"Player is in the same position {playposition - Diceroll()}!");
+            }
+        }
+        static int Diceroll()
+        {
+            Random rand = new Random();
+            return rand.Next(1, 7);
+        }
+
     }
 }
